@@ -16,5 +16,9 @@ givePrimeNumbers <- function(n)
   which(primes)
 }
 
-a = givePrimeNumbers(1000000)
-hist(a)
+PrimeNumbers_0_to_1000000 = givePrimeNumbers(1000000)
+write.csv(a,'/Users/sarah/Desktop/TRU/DBMS/prime_numbers.csv')
+hist(PrimeNumbers_0_to_1000000,main=NULL)
+
+b<-c(2,3,5,7)
+hist(b,main=NULL)
